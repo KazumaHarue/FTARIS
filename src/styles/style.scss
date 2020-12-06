@@ -1,0 +1,182 @@
+/* ----------------- */
+/* 全体共通のスタイル */
+/* ----------------- */
+$main-color: #624ce0;
+$background-color: #e8effc;
+
+/* .btn-primaryの色を変更 */
+.btn-primary {
+  background: $background-color;
+  color: $main-color;
+  &:hover {
+    background: $main-color;
+    color: $background-color;
+  }
+}
+
+/* ----------- */
+/*   TopPage   */
+/* ----------- */
+
+/* Header */
+
+.header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+  &-left img {
+    height: auto;
+    width: 3rem;
+  }
+  &-ttl {
+    font-size: 1.2rem;
+    padding: 0.4rem 0 0 0.5rem;
+  }
+  &-right {
+    button {
+      height: 3rem;
+    }
+    img {
+      height: 2rem;
+    }
+  }
+}
+
+/* Catch */
+
+.catch {
+  text-align: center;
+  margin-bottom: 2rem;
+  img {
+    height: auto;
+    width: 60%;
+    max-width: 18rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin: auto;
+    text-align: center;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+/* StartBattle */
+
+.startbattle {
+  display: flex;
+  align-items: baseline;
+  margin: 0rem 1rem 2rem;
+  .startbutton {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+}
+
+/* BeatCheck */
+
+.beatcheck {
+  margin-bottom: 0.5rem;
+}
+
+/* About */
+
+.modal-body {
+  h5 {
+    color: $main-color;
+    margin-bottom: 1rem;
+    &:first-child {
+      margin-top: 1rem;
+    }
+  }
+  p {
+    margin: 0 1rem 2rem;
+    &:not(:last-child) {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $background-color;
+    }
+    span {
+      padding: 0.1rem;
+      border-radius: 0.1rem;
+      color: $main-color;
+      background-color: $background-color;
+    }
+  }
+}
+/* ------------ */
+/* MatchingPage */
+/* ------------ */
+
+.battle-ttl {
+  text-align: center;
+  margin: 4rem 0;
+}
+.share-buttons img {
+  height: 3rem;
+  margin: 5rem 0 6rem;
+}
+
+/* svgの色を変えたい */
+/* .share-buttons:nth-child(1) {
+  color: #3b5998;
+}
+.share-buttons {
+  fill: #3b5998;
+} */
+
+/* -------------- */
+/*   BattlePage   */
+/* -------------- */
+
+.opponent {
+  width: 100%;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+.self {
+  width: 25%;
+  min-width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* md以上 */
+
+@media screen and (min-width: 768px) {
+  /* キャッチコピーの上下の余白を広く */
+  .catchcopy {
+    margin-bottom: 3rem;
+    img {
+      margin-bottom: 3rem;
+    }
+  }
+  /* SNSのロゴの上下の余白を広く */
+  .share-buttons img {
+    margin: 7rem 0 8rem;
+  }
+  /* テキストを中央に寄せる */
+  .battle-text {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+
+/* lg以上 */
+
+@media screen and (min-width: 992px) {
+  /* ヘッダーの下の余白を広く */
+  .header {
+    margin-bottom: 6rem;
+  }
+  /* キャッチコピーのフォントサイズを大きく */
+  .catchcopy h2 {
+    font-size: 2.1rem;
+  }
+  /* バトルを始めるボタンの下の余白を広く */
+  .startbutton {
+    margin-bottom: 3rem;
+  }
+}
