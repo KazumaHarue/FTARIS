@@ -1,5 +1,5 @@
 {
-  "name": "online-mc-battle",
+  "name": "ftaris",
   "version": "0.1.0",
   "homepage": "./",
   "private": true,
@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",

@@ -130,17 +130,21 @@ $background-color: #e8effc;
 /*   BattlePage   */
 /* -------------- */
 
-.opponent {
-  width: 100%;
-  max-height: 100vh;
-  max-width: 100vw;
-}
-.self {
-  width: 25%;
-  min-width: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
+.battlepage {
+  .wrapper {
+    max-height: 50vh;
+    .opponentVideo {
+      max-width: 100vw;
+      max-height: 50vh;
+      width: 100%;
+    }
+    .myVideo {
+      max-width: 100vw;
+      max-height: 50vh;
+      width: 100%;
+      z-index: 1;
+    }
+  }
 }
 
 /* md以上 */
@@ -178,5 +182,9 @@ $background-color: #e8effc;
   /* バトルを始めるボタンの下の余白を広く */
   .startbutton {
     margin-bottom: 3rem;
+  }
+  /* 映像を横並びにする */
+  .battlepage{
+  display: flex;
   }
 }

@@ -23,11 +23,14 @@ const BattlePage = (props) => {
 
   return (
     <div className="battlepage">
-      <p>BattlePage</p>
-      <video width="400px" autoPlay muted playinline="true" ref={myVideo}>
-      </video>
-      <video width="400px" autoPlay muted playinline="true" ref={opponentVideo}>
-      </video>
+      <div className="wrapper">
+        <video className="myVideo" autoPlay muted playinline="true" ref={myVideo}>
+        </video>
+      </div>
+      <div className="wrapper">
+        <video className="opponentVideo" autoPlay muted playinline="true" ref={opponentVideo}>
+        </video>
+      </div>
     </div>
   );
 }
