@@ -7,7 +7,7 @@ const MatchingPage = (props) => {
   if (props.isSucceeded) {
     /* 対戦相手を探すページ(カメラ取得成功) */
     return (
-      <div className="battlepage container">
+      <div className="matchingpage container">
         <h2 className="battle-ttl">
           対戦相手を探しています…
         </h2>
@@ -29,7 +29,7 @@ const MatchingPage = (props) => {
   } else {
     /* 対戦相手を探すページ(カメラ取得失敗) */
     return (
-      <div className="battlepage container">
+      <div className="matchingpage container">
         <h2 className="battle-ttl">
           カメラとマイクの使用を許可してください。
         </h2>

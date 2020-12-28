@@ -108,14 +108,15 @@ $background-color: #e8effc;
 /* ------------ */
 /* MatchingPage */
 /* ------------ */
-
-.battle-ttl {
-  text-align: center;
-  margin: 4rem 0;
-}
-.share-buttons img {
-  height: 3rem;
-  margin: 5rem 0 6rem;
+.matchingpage {
+  .battle-ttl {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  .share-buttons img {
+    height: 3rem;
+    margin: 5rem 0 6rem;
+  }
 }
 
 /* svgの色を変えたい */
@@ -133,16 +134,14 @@ $background-color: #e8effc;
 .battlepage {
   .wrapper {
     max-height: 50vh;
+    max-width: 100vw;
     .opponentVideo {
-      max-width: 100vw;
-      max-height: 50vh;
+      height: 50vh;
       width: 100%;
     }
     .myVideo {
-      max-width: 100vw;
-      max-height: 50vh;
+      height: 50vh;
       width: 100%;
-      z-index: 1;
     }
   }
 }
@@ -184,7 +183,19 @@ $background-color: #e8effc;
     margin-bottom: 3rem;
   }
   /* 映像を横並びにする */
-  .battlepage{
-  display: flex;
+  .battlepage {
+    display: flex;
+    .wrapper {
+      max-width: 100vw;
+      max-height: 100vh;
+      .opponentVideo {
+        height: 100vh;
+        width: 50vw;
+      }
+      .myVideo {
+        height: 100vh;
+        width: 50vw;
+      }
+    }
   }
 }
