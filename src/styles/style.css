@@ -4,13 +4,19 @@
 /* ----------------- */
 /* .btn-primaryの色を変更 */
 .btn-primary {
-  background: #e8effc;
-  color: #624ce0;
+  background: #1F2124;
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn-primary:hover {
-  background: #624ce0;
-  color: #e8effc;
+  background: #fff;
+  color: #1F2124;
+  border-color: #fff;
+}
+
+body {
+  background: #1F2124;
 }
 
 /* ----------- */
@@ -87,7 +93,7 @@
 
 /* About */
 .modal-body h5 {
-  color: #624ce0;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -101,14 +107,14 @@
 
 .modal-body p:not(:last-child) {
   padding-bottom: 2rem;
-  border-bottom: 1px solid #e8effc;
+  border-bottom: 1px solid #1F2124;
 }
 
 .modal-body p span {
   padding: 0.1rem;
   border-radius: 0.1rem;
-  color: #624ce0;
-  background-color: #e8effc;
+  color: #fff;
+  background-color: #1F2124;
 }
 
 /* ------------ */
@@ -142,11 +148,13 @@
 .battlepage .wrapper .opponentVideo {
   height: 50vh;
   width: 100%;
+  background-color: black;
 }
 
 .battlepage .wrapper .myVideo {
   height: 50vh;
   width: 100%;
+  background-color: black;
 }
 
 /* md以上 */

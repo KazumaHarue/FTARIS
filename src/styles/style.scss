@@ -1,17 +1,23 @@
 /* ----------------- */
 /* 全体共通のスタイル */
 /* ----------------- */
-$main-color: #624ce0;
-$background-color: #e8effc;
+$main-color: #fff;
+$background-color: #1F2124;
 
 /* .btn-primaryの色を変更 */
 .btn-primary {
   background: $background-color;
   color: $main-color;
+  border-color: $main-color;
   &:hover {
     background: $main-color;
     color: $background-color;
+    border-color: $main-color;
   }
+}
+
+body{
+  background: $background-color;
 }
 
 /* ----------- */
@@ -138,10 +144,12 @@ $background-color: #e8effc;
     .opponentVideo {
       height: 50vh;
       width: 100%;
+      background-color: black;
     }
     .myVideo {
       height: 50vh;
       width: 100%;
+      background-color: black;
     }
   }
 }
