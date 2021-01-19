@@ -8,10 +8,10 @@ import BattlePage from './BattlePage';
 import MatchingPage from './MatchingPage';
 import Peer from 'skyway-js';
 
-let peer;           // new Peerを格納する変数
-let localStream;    // 自分のカメラ映像(相手に送信される)
-let opponentStream; // 相手のカメラ映像
-let mediaConnection;
+let peer;            // new Peerを格納する変数
+let localStream;     // 自分のカメラ映像(相手に送信される)
+let opponentStream;  // 相手のカメラ映像
+let mediaConnection; // 相手のID、映像などの情報
 
 class TopPage extends React.Component {
   constructor(props) {
@@ -20,7 +20,8 @@ class TopPage extends React.Component {
       Component: null,      // 表示するコンポーネント,デフォルト(null)でTopPage
       myPeerId: null,       // 自分のPeerID
       opponentPeerId: null, // 相手のPeerID
-      getMedia: null        // 映像取得の可否(Boolean型)
+      getMedia: null,       // 映像取得の可否(Boolean型)
+      peerOpen: false        // peerが作成されているか(Boolean型)
     };
   }
 
@@ -52,6 +53,7 @@ class TopPage extends React.Component {
             key: 'd29a08de-439a-4ea9-8549-21de16a6982b',
             debug: 3
           });
+          this.setState({ peerOpen: true });
           peer.on('open', () => {
             this.setState({ myPeerId: peer.id });
             console.log(`私のpeerIDは ${this.state.myPeerId} です。`);
@@ -127,11 +129,12 @@ class TopPage extends React.Component {
       });
   }
 
-  /* トップへ戻る関数 */
+  /* ホームへ戻る関数 */
   selectHome = () => {
     if (this.state.getMedia === true) {
       // シグナリングサーバとの接続を切断する
       peer.destroy();
+
     }
     setTimeout(() => {  // 連打防止
       this.setState({ Component: null });
