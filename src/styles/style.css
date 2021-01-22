@@ -4,19 +4,20 @@
 /* ----------------- */
 /* .btn-primaryの色を変更 */
 .btn-primary {
-  background: #1F2124;
+  background: #1f2124;
   color: #fff;
   border-color: #fff;
 }
 
 .btn-primary:hover {
   background: #fff;
-  color: #1F2124;
+  color: #1f2124;
   border-color: #fff;
 }
 
 body {
-  background: #1F2124;
+  background: #1f2124;
+  overflow-x: hidden;
 }
 
 /* ----------- */
@@ -24,26 +25,102 @@ body {
 /* ----------- */
 /* Header */
 .header {
-  border-bottom: 1px solid #ccc;
   margin-bottom: 2rem;
-}
-
-.header-left img {
-  height: auto;
-  width: 3rem;
-}
-
-.header-ttl {
-  font-size: 1.2rem;
-  padding: 0.4rem 0 0 0.5rem;
-}
-
-.header-right button {
+  background-color: #216b1d;
   height: 3rem;
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.header-right img {
-  height: 2rem;
+.header .point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .point .logo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #216b1d;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.header .point p {
+  color: #fff;
+  padding-left: 2px;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.header .title {
+  margin: 0;
+  color: #fff;
+}
+
+.header .info-btn {
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  line-height: 0;
+  background-color: #fff;
+}
+
+.header .info-text {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  padding: 0.5rem;
+  font-size: 12px;
+  line-height: 1.6em;
+  color: #fff;
+  border-radius: 5px;
+  background: #9e9e9e;
+  width: 240px;
+  z-index: 1;
+  color: #1f2124;
+}
+
+.header .info-text .ttl {
+  text-align: center;
+}
+
+.header .info-text:before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #9e9e9e;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.header .info-text:hover .info-text {
+  display: inline-block;
+  top: 30px;
+  left: 0px;
+}
+
+.header .open {
+  display: inline-block;
 }
 
 /* Catch */
@@ -107,14 +184,14 @@ body {
 
 .modal-body p:not(:last-child) {
   padding-bottom: 2rem;
-  border-bottom: 1px solid #1F2124;
+  border-bottom: 1px solid #1f2124;
 }
 
 .modal-body p span {
   padding: 0.1rem;
   border-radius: 0.1rem;
   color: #fff;
-  background-color: #1F2124;
+  background-color: #1f2124;
 }
 
 /* ------------ */

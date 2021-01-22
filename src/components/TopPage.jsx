@@ -21,7 +21,7 @@ class TopPage extends React.Component {
       myPeerId: null,       // 自分のPeerID
       opponentPeerId: null, // 相手のPeerID
       getMedia: null,       // 映像取得の可否(Boolean型)
-      peerOpen: false        // peerが作成されているか(Boolean型)
+      peerOpen: false       // peerが作成されているか(Boolean型)
     };
   }
 
@@ -35,7 +35,7 @@ class TopPage extends React.Component {
   /* 実際にバトルするページ */
   BattlePage = () => {
     return (
-      <BattlePage myStream={localStream} opponentStream={opponentStream} mediaConnection={mediaConnection}/>
+      <BattlePage myStream={localStream} opponentStream={opponentStream} mediaConnection={mediaConnection} />
     )
   };
 
@@ -134,7 +134,6 @@ class TopPage extends React.Component {
     if (this.state.getMedia === true) {
       // シグナリングサーバとの接続を切断する
       peer.destroy();
-
     }
     setTimeout(() => {  // 連打防止
       this.setState({ Component: null });
@@ -147,7 +146,7 @@ class TopPage extends React.Component {
     const Component = this.state.Component;
     if (Component) return <Component />;
     return (
-      <div className="container">
+      <div>
         <Header />
         <Catch />
         <StartBattle selectBattle={() => this.selectBattle()} />
