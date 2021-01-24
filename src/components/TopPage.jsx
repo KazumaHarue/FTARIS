@@ -146,7 +146,7 @@ class TopPage extends React.Component {
     const Component = this.state.Component;
     if (Component) return <Component />;
     return (
-      <div>
+      <div className="container-fluid">
         <Header />
         <Catch />
         <StartBattle selectBattle={() => this.selectBattle()} />

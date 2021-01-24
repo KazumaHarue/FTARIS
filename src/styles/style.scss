@@ -77,13 +77,12 @@ body {
     padding: 0.5rem;
     font-size: 12px;
     line-height: 1.6em;
-    color: #fff;
     border-radius: 5px;
-    background: #9e9e9e;
+    background: #d2d2d2;
     width: 240px;
     z-index: 1;
     color: $background-color;
-    .ttl{
+    .ttl {
       text-align: center;
     }
   }
@@ -93,7 +92,7 @@ body {
     top: -24px;
     right: 0;
     border: 15px solid transparent;
-    border-top: 15px solid #9e9e9e;
+    border-top: 15px solid #d2d2d2;
     transform: rotateZ(180deg);
   }
   .info-text:hover .info-text {
@@ -109,21 +108,44 @@ body {
 /* Catch */
 
 .catch {
-  text-align: center;
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto 2rem;
+  .col-2,
+  .col-8 {
+    padding: 0;
+  }
   img {
     height: auto;
     width: 60%;
     max-width: 18rem;
     margin-bottom: 2rem;
   }
-  h2 {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    margin: auto;
+  .beat-list {
     text-align: center;
-    span {
-      display: inline-block;
+    cursor: pointer;
+    .logo {
+      background-color: #fff;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      padding: 8px;
+      margin: 0 auto;
+      .circle {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border: solid 2px $background-color;
+        border-radius: 50%;
+      }
+    }
+    .txt {
+      color: $font-color;
+      margin: 0;
+      span {
+        display: inline-block;
+      }
     }
   }
 }
@@ -143,7 +165,6 @@ body {
 /* BeatCheck */
 
 .beatcheck {
-  margin-bottom: 0.5rem;
 }
 
 /* About */
