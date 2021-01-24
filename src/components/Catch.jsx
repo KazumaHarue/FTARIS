@@ -8,7 +8,7 @@ const Catch = (props) => {
       {/* imgに直接hight:autoを指定すると、safariで画像が縦に伸びる */}
       <div className="col-2"></div>
       <img src={Logo} alt="ロゴ" className="col-8" />
-      <div className="beat-list col-2">
+      <div className="beat-list col-2" onClick={() => props.selectBeatList()}>
         <div className="logo">
           <div className="circle"></div>
         </div>

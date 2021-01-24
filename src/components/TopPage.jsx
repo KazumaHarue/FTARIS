@@ -6,6 +6,7 @@ import BeatCheck from "./BeatCheck";
 import About from "./About";
 import BattlePage from './BattlePage';
 import MatchingPage from './MatchingPage';
+import BeatList from './BeatList';
 import Peer from 'skyway-js';
 
 let peer;            // new Peerを格納する変数
@@ -36,6 +37,13 @@ class TopPage extends React.Component {
   BattlePage = () => {
     return (
       <BattlePage myStream={localStream} opponentStream={opponentStream} mediaConnection={mediaConnection} />
+    )
+  };
+
+  /* ビート一覧 */
+  BeatList = () => {
+    return (
+      <BeatList />
     )
   };
 
@@ -147,8 +155,8 @@ class TopPage extends React.Component {
     if (Component) return <Component />;
     return (
       <div className="container-fluid">
-        <Header />
-        <Catch />
+        <Header footer={this.state.Component} />
+        <Catch selectBeatList={() => this.setState({ Component: this.BeatList })}/>
         <StartBattle selectBattle={() => this.selectBattle()} />
         <BeatCheck />
         <About />
