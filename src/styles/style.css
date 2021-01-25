@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  margin: 0;
+}
+
 /* ----------- */
 /*   TopPage   */
 /* ----------- */
@@ -64,11 +68,9 @@ body {
   color: #fff;
   padding-left: 2px;
   line-height: 1rem;
-  margin: 0;
 }
 
 .header .title {
-  margin: 0;
   color: #fff;
 }
 
@@ -105,7 +107,7 @@ body {
   content: "";
   position: absolute;
   top: -24px;
-  right: 0;
+  right: 14px;
   border: 15px solid transparent;
   border-top: 15px solid #d2d2d2;
   -webkit-transform: rotateZ(180deg);
@@ -141,6 +143,16 @@ body {
   padding: 0;
 }
 
+.catch .online {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.catch .online .txt {
+  margin: 0 -24px;
+}
+
 .catch img {
   height: auto;
   width: 60%;
@@ -172,7 +184,7 @@ body {
 
 .catch .beat-list .txt {
   color: #fff;
-  margin: 0;
+  margin: 0 -24px;
 }
 
 .catch .beat-list .txt span {

@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+p{
+  margin: 0;
+}
+
 /* ----------- */
 /*   TopPage   */
 /* ----------- */
@@ -53,11 +57,9 @@ body {
       color: $font-color;
       padding-left: 2px;
       line-height: 1rem;
-      margin: 0;
     }
   }
   .title {
-    margin: 0;
     color: $font-color;
   }
   .info-btn {
@@ -90,7 +92,7 @@ body {
     content: "";
     position: absolute;
     top: -24px;
-    right: 0;
+    right: 14px;
     border: 15px solid transparent;
     border-top: 15px solid #d2d2d2;
     transform: rotateZ(180deg);
@@ -115,6 +117,14 @@ body {
   .col-2,
   .col-8 {
     padding: 0;
+  }
+  .online{
+    color: $font-color;
+    font-size: 0.8rem;
+    text-align: center;
+    .txt{
+      margin: 0 -24px;
+    }
   }
   img {
     height: auto;
@@ -142,7 +152,7 @@ body {
     }
     .txt {
       color: $font-color;
-      margin: 0;
+      margin: 0 -24px;
       span {
         display: inline-block;
       }
