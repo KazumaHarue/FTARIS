@@ -178,7 +178,7 @@ p {
   position: absolute;
   width: 8px;
   height: 8px;
-  border: solid 2px #1f2124;
+  border: 2px solid #1f2124;
   border-radius: 50%;
 }
 
@@ -232,6 +232,34 @@ p {
   border-radius: 0.1rem;
   color: #fff;
   background-color: #1f2124;
+}
+
+/* BeatList */
+.beatlist .provider {
+  color: #333;
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+
+.beatlist .beat {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #2c2e32;
+  margin: 0 1rem;
+}
+
+.beatlist .beat .fa-play-circle,
+.beatlist .beat .fa-stop-circle {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.beatlist .beat .name {
+  margin-left: 1rem;
+  line-height: 3rem;
 }
 
 /* ------------ */
