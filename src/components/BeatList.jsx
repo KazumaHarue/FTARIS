@@ -12,7 +12,8 @@ const BeatList = (props) => {
   }
   return (
     <div className="beatlist">
-      {/* TODO: <Header /> 戻るボタンの表示非表示をpropsで受け取る */}
+      {/* TODO: 別コンポーネントに切り分ける */}
+      <Header footer="null" prevtext="show" />
       <div className="provider"><p>ゆの(NA3TY)</p></div>
       <div className="beat">
         <i className={iconClass} onClick={() => btnClick(!display)}></i>

@@ -155,7 +155,7 @@ class TopPage extends React.Component {
     if (Component) return <Component />;
     return (
       <div className="container-fluid">
-        <Header footer={this.state.Component} />
+        <Header footer={this.state.Component} prevtext="hide"/>
         <Catch selectBeatList={() => this.setState({ Component: this.BeatList })}/>
         <StartBattle selectBattle={() => this.selectBattle()} />
         <BeatCheck />

@@ -29,6 +29,7 @@ p {
 /* ----------- */
 /* Header */
 .header {
+  color: #fff;
   margin-bottom: 2rem;
   background-color: #216b1d;
   height: 3rem;
@@ -65,13 +66,8 @@ p {
 }
 
 .header .point p {
-  color: #fff;
   padding-left: 2px;
   line-height: 1rem;
-}
-
-.header .title {
-  color: #fff;
 }
 
 .header .info-btn {
@@ -122,6 +118,24 @@ p {
 
 .header .open {
   display: inline-block;
+}
+
+.header .header-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: -2rem;
+}
+
+.header .header-prev .fa-chevron-left, .header .header-prev p {
+  line-height: 3rem;
+}
+
+.header .header-prev .fa-chevron-left {
+  margin-right: 0.5rem;
 }
 
 /* Catch */

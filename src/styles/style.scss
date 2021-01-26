@@ -33,6 +33,7 @@ p {
 /* Header */
 
 .header {
+  color: $font-color;
   margin-bottom: 2rem;
   background-color: $main-color;
   height: 3rem;
@@ -54,13 +55,9 @@ p {
       border-radius: 4px;
     }
     p {
-      color: $font-color;
       padding-left: 2px;
       line-height: 1rem;
     }
-  }
-  .title {
-    color: $font-color;
   }
   .info-btn {
     font-size: 1rem;
@@ -104,6 +101,17 @@ p {
   }
   .open {
     display: inline-block;
+  }
+  .header-prev{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -2rem;
+    .fa-chevron-left, p{
+      line-height: 3rem;
+    }
+    .fa-chevron-left{
+      margin-right: 0.5rem;
+    }
   }
 }
 
