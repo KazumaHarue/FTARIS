@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/style.css';
 import Header from './Header.jsx';
 
-const BeatList = (props) => {
+const BeatListPage = (props) => {
   let iconClass = "far fa-play-circle";
   const [display, btnClick] = useState(false);
   if (display === true) {
@@ -23,4 +23,4 @@ const BeatList = (props) => {
   )
 };
 
-export default BeatList;
+export default BeatListPage;
