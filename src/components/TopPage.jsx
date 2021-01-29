@@ -2,7 +2,6 @@ import React from 'react';
 import Header from "./Header";
 import StartBattle from "./StartBattle.jsx";
 import Catch from "./Catch";
-import BeatCheck from "./BeatCheck";
 import About from "./About";
 import BattlePage from './BattlePage';
 import MatchingPage from './MatchingPage';
@@ -158,7 +157,6 @@ class TopPage extends React.Component {
         <Header selectPrev={() => this.selectHome()} footer={this.state.Component} prevtext="hide"/>
         <Catch selectBeatList={() => this.setState({ Component: this.BeatListPage })}/>
         <StartBattle selectBattle={() => this.selectBattle()} />
-        <BeatCheck />
         <About />
       </div>
     )
