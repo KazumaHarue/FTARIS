@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/style.css';
 import Logo from '../images/logo.png';
 
+// props.selectBeatList : BeatListPageに遷移する
+
 const Catch = (props) => {
   return (
     <div className="catch row">

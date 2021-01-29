@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/style.css';
 
+// props.selectPrev : トップに戻る処理
+// props.footer     : 表示しているコンポーネント
+// props.prevtext   : 戻るボタンの表示/非表示
+
 const Header = (props) => {
   // お知らせの表示/非表示
   let textClass = "info-text";

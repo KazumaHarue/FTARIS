@@ -3,6 +3,9 @@ import TwitterLogo from '../images/twitter-brands.svg';
 import FacebookLogo from '../images/facebook-f-brands.svg';
 import LineLogo from '../images/line-brands.svg';
 
+// props.isSucceeded     : 映像取得の可否(Boolean型)
+// props.clickSelectHome : トップに戻る処理
+
 const MatchingPage = (props) => {
   if (props.isSucceeded) {
     /* 対戦相手を探すページ(カメラ取得成功) */

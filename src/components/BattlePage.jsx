@@ -2,10 +2,10 @@ import React, { useRef, useEffect } from 'react';
 import '../styles/style.css';
 
 
-// mediaConnection : 相手のID、映像などの情報
-// on('stream'...  : 相手の映像が送られてきた時のイベント
-// props.myStream  : TopPage内のnavigator.mediaDevices.getUserMedia()で取得した自分の映像
-
+// on('stream'...        : 相手の映像が送られてきた時のイベント
+// props.myStream        : TopPage内のnavigator.mediaDevices.getUserMedia()で取得した自分の映像
+// props.opponentStream  : mediaConnectionで取得した相手のカメラ映像
+// props.mediaConnection : 相手のID、映像などの情報
 
 const BattlePage = (props) => {
   const myVideo = useRef(null);

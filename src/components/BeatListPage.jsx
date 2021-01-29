@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../styles/style.css';
 import Header from './Header.jsx';
 
+// selectPrev : トップに戻る処理
+
 const BeatListPage = (props) => {
   let iconClass = "far fa-play-circle";
   const [display, btnClick] = useState(false);
