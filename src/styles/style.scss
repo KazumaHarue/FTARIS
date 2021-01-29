@@ -102,15 +102,16 @@ p {
   .open {
     display: inline-block;
   }
-  .header-prev{
+  .header-prev {
     display: flex;
     justify-content: flex-start;
     margin-left: -2rem;
     cursor: pointer;
-    .fa-chevron-left, p{
+    .fa-chevron-left,
+    p {
       line-height: 3rem;
     }
-    .fa-chevron-left{
+    .fa-chevron-left {
       margin-right: 0.5rem;
     }
   }
@@ -213,13 +214,17 @@ p {
 
 /* BeatList */
 .beatlist {
+}
+
+/* Beat */
+.beat {
   .provider {
     color: #333;
     background-color: #fff;
     line-height: 1.5rem;
     padding-left: 1rem;
   }
-  .beat {
+  .beat-name {
     color: #fff;
     display: flex;
     border-bottom: 1px solid #2c2e32;

@@ -1,26 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/style.css';
 import Header from './Header.jsx';
+import Beat from './Beat.jsx';
 
-// selectPrev : トップに戻る処理
+// props.selectPrev : トップに戻る処理
 
 const BeatListPage = (props) => {
-  let iconClass = "far fa-play-circle";
-  const [display, btnClick] = useState(false);
-  if (display === true) {
-    iconClass = "far fa-stop-circle";
-  } else {
-    iconClass = "far fa-play-circle";
-  }
   return (
     <div className="beatlist">
-      {/* TODO: 別コンポーネントに切り分ける */}
       <Header selectPrev={() => props.selectPrev} footer="null" prevtext="show" />
-      <div className="provider"><p>ゆの(NA3TY)</p></div>
-      <div className="beat">
-        <i className={iconClass} onClick={() => btnClick(!display)}></i>
-        <p className="name">BPM94(戦国MCBATTLE提供)</p>
-      </div>
+      <Beat provider="ゆの(NA3TY)" />
+      <Beat beat="BPM94(戦国MCBATTLE提供)" />
+      <Beat beat="じょう2号(戦国MCBATTLE提供)" />
+      <Beat beat="じょう3号(戦国MCBATTLE提供)" />
+      <Beat beat="すばやいビート(戦国MCBATTLE提供)" />
+      <Beat beat="Bounce＄(戦国MCBATTLE提供)" />
+      <Beat beat="シャチトラップ(戦国MCBATTLE提供)" />
+      <Beat provider="LUKA THE KISARAGI" />
+      <Beat beat="Beat10" />
+      <Beat beat="Beat17" />
+      <Beat beat="Beat20" />
+      <Beat beat="Beat27" />
+      <Beat beat="Beat37" />
+      <Beat beat="Beat38" />
+      <Beat beat="Beat49" />
+      <Beat provider="華偶" />
+      <Beat beat="操ル人形" />
+      <Beat beat="決戦" />
+      <Beat beat="仔羊" />
+      <Beat beat="獅子" />
+      <Beat beat="富嶽" />
     </div>
   )
 };

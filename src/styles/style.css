@@ -131,7 +131,8 @@ p {
   cursor: pointer;
 }
 
-.header .header-prev .fa-chevron-left, .header .header-prev p {
+.header .header-prev .fa-chevron-left,
+.header .header-prev p {
   line-height: 3rem;
 }
 
@@ -250,14 +251,15 @@ p {
 }
 
 /* BeatList */
-.beatlist .provider {
+/* Beat */
+.beat .provider {
   color: #333;
   background-color: #fff;
   line-height: 1.5rem;
   padding-left: 1rem;
 }
 
-.beatlist .beat {
+.beat .beat-name {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,13 +268,13 @@ p {
   margin: 0 1rem;
 }
 
-.beatlist .beat .fa-play-circle,
-.beatlist .beat .fa-stop-circle {
+.beat .beat-name .fa-play-circle,
+.beat .beat-name .fa-stop-circle {
   font-size: 2rem;
   line-height: 3rem;
 }
 
-.beatlist .beat .name {
+.beat .beat-name .name {
   margin-left: 1rem;
   line-height: 3rem;
 }
