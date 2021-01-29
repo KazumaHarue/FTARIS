@@ -13,7 +13,7 @@ const BeatListPage = (props) => {
   return (
     <div className="beatlist">
       {/* TODO: 別コンポーネントに切り分ける */}
-      <Header footer="null" prevtext="show" />
+      <Header selectPrev={() => props.selectPrev} footer="null" prevtext="show" />
       <div className="provider"><p>ゆの(NA3TY)</p></div>
       <div className="beat">
         <i className={iconClass} onClick={() => btnClick(!display)}></i>
