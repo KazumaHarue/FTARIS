@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./Header";
-import StartBattle from "./StartBattle.jsx";
+import ButtonGroup from "./ButtonGroup.jsx";
 import Catch from "./Catch";
 import About from "./About";
 import BattlePage from './BattlePage';
@@ -156,7 +156,7 @@ class TopPage extends React.Component {
       <div className="container-fluid">
         <Header selectPrev={() => this.selectHome()} footer={this.state.Component} prevtext="hide"/>
         <Catch selectBeatList={() => this.setState({ Component: this.BeatListPage })}/>
-        <StartBattle selectBattle={() => this.selectBattle()} />
+        <ButtonGroup selectBattle={() => this.selectBattle()} />
         <About />
       </div>
     )

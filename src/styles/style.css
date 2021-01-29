@@ -207,8 +207,8 @@ p {
   display: inline-block;
 }
 
-/* StartBattle */
-.startbattle {
+/* ButtonGroup */
+.buttongroup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +218,7 @@ p {
   margin: 0rem 1rem 2rem;
 }
 
-.startbattle .startbutton {
+.buttongroup .startbutton {
   padding: 1rem 0;
   margin-bottom: 1rem;
 }
@@ -291,13 +291,6 @@ p {
   margin: 5rem 0 6rem;
 }
 
-/* svgの色を変えたい */
-/* .share-buttons:nth-child(1) {
-  color: #3b5998;
-}
-.share-buttons {
-  fill: #3b5998;
-} */
 /* -------------- */
 /*   BattlePage   */
 /* -------------- */
