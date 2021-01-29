@@ -128,6 +128,7 @@ p {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-left: -2rem;
+  cursor: pointer;
 }
 
 .header .header-prev .fa-chevron-left, .header .header-prev p {

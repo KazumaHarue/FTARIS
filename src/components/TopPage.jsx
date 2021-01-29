@@ -43,7 +43,7 @@ class TopPage extends React.Component {
   /* ビート一覧 */
   BeatListPage = () => {
     return (
-      <BeatListPage />
+      <BeatListPage selectPrev={() => this.selectHome()} />
     )
   };
 
@@ -155,7 +155,7 @@ class TopPage extends React.Component {
     if (Component) return <Component />;
     return (
       <div className="container-fluid">
-        <Header footer={this.state.Component} prevtext="hide"/>
+        <Header selectPrev={() => this.selectHome()} footer={this.state.Component} prevtext="hide"/>
         <Catch selectBeatList={() => this.setState({ Component: this.BeatListPage })}/>
         <StartBattle selectBattle={() => this.selectBattle()} />
         <BeatCheck />

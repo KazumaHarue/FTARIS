@@ -19,7 +19,7 @@ const Header = (props) => {
     SettingPage: "設定"
   };
   if (props.prevtext === "hide") {
-    if (props.footer === null) {
+    if (props.footer === null) { // トップ画面で表示するヘッダー
       return (
         <header className="header row">
           <div className="point">
@@ -48,7 +48,7 @@ const Header = (props) => {
   } else if (props.prevtext === "show") {
     return (
       <header className="header row">
-        <div className="header-prev">
+        <div className="header-prev" onClick={() => props.selectPrev()}>
           <i className="fas fa-chevron-left"></i>
           <p>{headerText[props.footer]}</p>
         </div>
