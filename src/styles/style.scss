@@ -7,12 +7,12 @@ $main-color: #216b1d;
 
 /* .btn-primaryの色を変更 */
 .btn-primary {
-  background: $background-color;
-  color: $font-color;
+  background: $font-color;
+  color: $background-color;
   border-color: $font-color;
   &:hover {
-    background: $font-color;
-    color: $background-color;
+    background: $background-color;
+    color: $font-color;
     border-color: $font-color;
   }
 }
@@ -176,6 +176,10 @@ p {
   display: flex;
   align-items: baseline;
   margin: 0rem 1rem 2rem;
+  justify-content: space-between;
+  .btn{
+    padding: 1rem 2rem;
+  }
   .startbutton {
     padding: 1rem 0;
     margin-bottom: 1rem;

@@ -4,14 +4,14 @@
 /* ----------------- */
 /* .btn-primaryの色を変更 */
 .btn-primary {
-  background: #1f2124;
-  color: #fff;
+  background: #fff;
+  color: #1f2124;
   border-color: #fff;
 }
 
 .btn-primary:hover {
-  background: #fff;
-  color: #1f2124;
+  background: #1f2124;
+  color: #fff;
   border-color: #fff;
 }
 
@@ -216,6 +216,13 @@ p {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin: 0rem 1rem 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buttongroup .btn {
+  padding: 1rem 2rem;
 }
 
 .buttongroup .startbutton {
