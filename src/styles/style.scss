@@ -189,26 +189,29 @@ p {
 /* About */
 
 .modal-body {
-  h5 {
-    color: $font-color;
-    margin-bottom: 1rem;
-    &:first-child {
-      margin-top: 1rem;
-    }
+  .help{
+    width: 100%;
   }
-  p {
-    margin: 0 1rem 2rem;
-    &:not(:last-child) {
-      padding-bottom: 2rem;
-      border-bottom: 1px solid $background-color;
-    }
-    span {
-      padding: 0.1rem;
-      border-radius: 0.1rem;
-      color: $font-color;
-      background-color: $background-color;
-    }
-  }
+  // h5 {
+  //   color: $font-color;
+  //   margin-bottom: 1rem;
+  //   &:first-child {
+  //     margin-top: 1rem;
+  //   }
+  // }
+  // p {
+  //   margin: 0 1rem 2rem;
+  //   &:not(:last-child) {
+  //     padding-bottom: 2rem;
+  //     border-bottom: 1px solid $background-color;
+  //   }
+  //   span {
+  //     padding: 0.1rem;
+  //     border-radius: 0.1rem;
+  //     color: $font-color;
+  //     background-color: $background-color;
+  //   }
+  // }
 }
 
 /* BeatList */

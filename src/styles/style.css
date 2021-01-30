@@ -231,29 +231,8 @@ p {
 }
 
 /* About */
-.modal-body h5 {
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.modal-body h5:first-child {
-  margin-top: 1rem;
-}
-
-.modal-body p {
-  margin: 0 1rem 2rem;
-}
-
-.modal-body p:not(:last-child) {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #1f2124;
-}
-
-.modal-body p span {
-  padding: 0.1rem;
-  border-radius: 0.1rem;
-  color: #fff;
-  background-color: #1f2124;
+.modal-body .help {
+  width: 100%;
 }
 
 /* BeatList */
