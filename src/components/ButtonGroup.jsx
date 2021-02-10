@@ -15,7 +15,10 @@ const ButtonGroup = (props) => (
       ○
       </button> */}
     <button type="button" className="startbutton btn btn-primary btn-lg w-100" onClick={() => props.selectBattle()}>
-      バトルを始める
+      フリーバトル
+      </button>
+    <button type="button" className="startbutton btn btn-primary btn-lg w-100">
+      フレンドマッチ
       </button>
   </div>
 );
